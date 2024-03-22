@@ -1,13 +1,9 @@
-*
-*.*
+
 
 kaggle.json
 test.py
 *.csv
 *.zip
 datasets/*
-
-!uitils.py
-!PU-Learning.ipynb
-!dataloader.py
-!src\*.py
+src/*/*.pyc
+src/*.pyc
