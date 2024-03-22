@@ -3,7 +3,8 @@ from tensorflow.keras.datasets import mnist, cifar10
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
-
+from uitils import *
+ 
 class DataLoader():
 
     def load_mnist(self):
@@ -22,7 +23,8 @@ class DataLoader():
         return X_train, y_train, X_test, y_test
     
     def load_creditcard(self):
-        df = pd.read_csv("creditcard.csv")
+        creditcard_path =get_full_path('..\datasets\creditcard.csv')
+        df = pd.read_csv(creditcard_path)
         print(df.head())
         return df
 
