@@ -1,2 +1,5 @@
 kaggle.json
 test.py
+*.csv
+*.zip
+datasets/*
