@@ -23,7 +23,8 @@ class DataLoader():
         return X_train, y_train, X_test, y_test
     
     def load_creditcard(self):
-        creditcard_path =get_full_path('..\datasets\creditcard.csv')
+        creditcard_path =get_full_path('../datasets/creditcard.csv')
+        # print(creditcard_path)
         df = pd.read_csv(creditcard_path)
         print(df.head())
         return df
