@@ -26,7 +26,7 @@ class DataLoader():
         creditcard_path =get_full_path('../datasets/creditcard.csv')
         # print(creditcard_path)
         df = pd.read_csv(creditcard_path)
-        print(df.head())
+        # print(df.head())
         return df
 
 if __name__ == "__main__":
