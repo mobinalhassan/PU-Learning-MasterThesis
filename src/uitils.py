@@ -56,3 +56,16 @@ def extract_samples(x, y, n_samples=100):
     y_samples = np.concatenate(y_samples, axis=0)
     
     return x_samples, y_samples
+
+def bin_ploter(predicted_labels):
+    label_counts = np.bincount(predicted_labels)
+
+    # Create the bar plot
+    labels = ['0s', '1s']
+    counts = [label_counts[0], label_counts[1]]
+
+    plt.bar(labels, counts, color=['blue', 'orange'])
+    plt.xlabel('Labels')
+    plt.ylabel('Count')
+    plt.title('Counts of Predicted Labels')
+    plt.show()
