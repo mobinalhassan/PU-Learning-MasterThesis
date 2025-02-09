@@ -9,3 +9,4 @@ src/*/*.pyc
 src/*.pyc
 tensorflow_gpu_env/*
 *_env/*
+tf_c_gpu
